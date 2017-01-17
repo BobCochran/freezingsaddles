@@ -1,15 +1,16 @@
 # BikeArlington Freezing Saddles
 
-**IMPORTANT**
-This is just a development snapshot.  Expect it to be very broken.
+## MongoDB version of Bike Arlington Freezing Saddles Data.
 
-The BikeArlington Freezing Saddles ("bafs") project is a python web application that integrates with Strava APIs to 
+This branch is in development.  It is likely to be broken.
+
+The BikeArlington Freezing Saddles ("bafs") project is a web application that integrates with Strava APIs to 
 provide charting (and intended to provide other reports too) for the Freezing Saddles cycling competition organized
 on BikeArlington forums.
 
 ## Dependencies
  
-* Python 2.6+.  (This will not currently work with Python 3.)
+* Node.js 
 * Setuptools/Distribute
 * Virtualenv
 * [Stravalib](http://github.com/hozn/stravalib) 0.2 development version (from git)
