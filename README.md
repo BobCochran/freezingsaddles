@@ -1,9 +1,9 @@
-# BikeArlington Freezing Saddles
+# Generic Bicycle Ride Journal
 
 ## This is a fork of the hozn/freezingsaddles repository. 
 
 It is intended to become a Node.js version of Bike Arlington Freezing Saddles application, with
-a MongoDB database backend.
+a MongoDB database backend. 
 
 This branch is in development. Expect breakage.
 
