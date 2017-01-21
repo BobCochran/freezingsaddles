@@ -1,0 +1,4 @@
+db.ride_journal1.insert(
+{ "team" : "18", "member" : "Greta Garbuckle", "rides" : [ { "day" : 13, "date" : new Date("2017-01-13T07:30:00"), "start_loc" : [39.0019871, -76.8749491], "end_loc" : [38.975784, -76.9058972], "miles" : NumberDecimal("7.00"), "points" : NumberDecimal("7.00") } ] }
+)
+
