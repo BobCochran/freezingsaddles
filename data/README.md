@@ -30,6 +30,13 @@ test_add_second_ride_smith
 This is because the update method is being called, not the insert method. The document 
 to be updated must already exist.
 
+##Database Collections
+
+You can create collections with the "miles" and "points" fields which are in either NumberDecimal or NumberLong format. Just use the scripts in the appropriate directories, as explained above.
+
+The collection ride_journal1 contains documents with the "miles" and "points" fields in NumberDecimal format.
+The collection ride_journal2 contains documents with the "miles" and "points" fields in NumberLong format.
+
 ### Note about the 'miles' and 'points' fields in the document collection.
 It was discovered during initial efforts to aggregate the data through Node.js scripts that the mongodb JavaScript driver does not support NumberDecinal format. It was decided to create scripts for setting up test documents that have these fields in NumberLong format. That way, database users can have a choice of which data format they prefer using. For now (January 2017), it appears that NumberLong may be the only viable format for Node developers, until the mongodb javascript driver supports NumberDecimal. The MongoDB Java driver does support NumberDecimal at this writing.
  
