@@ -35,7 +35,11 @@ to be updated must already exist.
 You can create collections with the "miles" and "points" fields which are in either NumberDecimal or NumberLong format. Just use the scripts in the appropriate directories, as explained above.
 
 The collection ride_journal1 contains documents with the "miles" and "points" fields in NumberDecimal format.
+
 The collection ride_journal2 contains documents with the "miles" and "points" fields in NumberLong format.
+
+##NumberLong Format Requires Programming With A Scale Factor
+Values inserted for the "miles" and "points" fields for the NumberLong data type are intended (for purposes of this project) to be treated with an implied decimal point of two digits precision. So if you see a raw value such as NumberLong(500), the intent of this project is that the value is actually 5.00, not 500.00. Programming has to be done with a scale factor that gives us 2 decimal places of precision. Please note that the NumberLong data format does not in itself format values with an implied decimal point. Instead, the implied decimal point is applied at the project level: we decide the precision we need, and write scripts containing scale factors appropriate to the decimal precision required.
 
 ### Note about the 'miles' and 'points' fields in the document collection.
 It was discovered during initial efforts to aggregate the data through Node.js scripts that the mongodb JavaScript driver does not support NumberDecinal format. It was decided to create scripts for setting up test documents that have these fields in NumberLong format. That way, database users can have a choice of which data format they prefer using. For now (January 2017), it appears that NumberLong may be the only viable format for Node developers, until the mongodb javascript driver supports NumberDecimal. The MongoDB Java driver does support NumberDecimal at this writing.
