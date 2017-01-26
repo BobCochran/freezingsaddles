@@ -1,0 +1,4 @@
+db.ride_journal2.insert(
+{ "team" : "19", "member" : "Milroy Fizzie", "rides" : [ { "day" : 1, "date" : new Date("2017-01-13T07:30:00"), "start_loc" : [39.0019871, -76.8749491], "end_loc" : [38.994095, -76.875786], "miles" : NumberLong("120"), "points" : NumberLong("100") } ] }
+)
+

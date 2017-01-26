@@ -1,0 +1,4 @@
+db.ride_journal2.insert(
+{ "team" : "18", "member" : "William Smith", "rides" : [ { "day" : 136, "date" : new Date("2017-04-01T07:30:00"), "start_loc" : [39.0019871, -76.8749491], "end_loc" : [38.975784, -76.9058972], "miles" : NumberLong("500"), "points" : NumberLong("500") } ] }
+)
+
