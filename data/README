@@ -2,11 +2,12 @@ HOW TO SET UP A SMALL INITIAL MONGODB COLLECTION
 
 What is required? A MongoDB server version 3.4. You can download a MongoDB server at https://www.mongodb.com/download-center?jmp=nav#community.
 
-You must have at least version 3.4 because the document structure uses the new NumberDecimal data format.
+You must have at least version 3.4 because the document structure uses the new NumberDecimal data format. All the code in the 'ndecimal' directory creates a collection with documents that contain fields in NumberDecimal format. It was discovered during initial efforts to aggregate the data through Node.js scripts that the mongodb JavaScript driver does not support this format.
+
 
 Once your server is set up and running, the fun begins. 
 
-These files can be added in any order:
+If you want to work with fields in NumberDecimal format, please change to the 'ndecimal' directory. If you want to work with fields in NumberLong format, please change to the 'nlong' directory. Once you are in one of these directories, the files shown below can be added in any order:
 
 test_add_fizzie
 test_add_garbuckle
