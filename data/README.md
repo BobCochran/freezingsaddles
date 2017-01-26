@@ -9,8 +9,11 @@ Once your server is set up and running, the fun begins.
 If you want to work with fields in NumberDecimal format, please change to the 'ndecimal' directory. If you want to work with fields in NumberLong format, please change to the 'nlong' directory. Once you are in one of these directories, the files shown below can be added in any order:
 
 test_add_fizzie
+
 test_add_garbuckle
+
 test_add_smith
+
 
 In Linux or MacOS, you can open a shell promopt and start the mongo shell.
 
