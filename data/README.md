@@ -31,5 +31,5 @@ This is because the update method is being called, not the insert method. The do
 to be updated must already exist.
 
 ### Note about the 'miles' and 'points' fields in the document collection.
-It was discovered during initial efforts to aggregate the data through Node.js scripts that the mongodb JavaScript driver does not support NumberDecinal format. It was decided to create scripts for setting up test documents that have these fields in NumberLong format. That way, database users can have a choice of which data format they prefer using. For now (January 2017), it appears that NumberLong may be the only viable format for Node developers, until the mongodb javascript driver supports NumberDeciaml. The MongoDB Java driver, however, does support NumberDecimal at this writing.
+It was discovered during initial efforts to aggregate the data through Node.js scripts that the mongodb JavaScript driver does not support NumberDecinal format. It was decided to create scripts for setting up test documents that have these fields in NumberLong format. That way, database users can have a choice of which data format they prefer using. For now (January 2017), it appears that NumberLong may be the only viable format for Node developers, until the mongodb javascript driver supports NumberDecimal. The MongoDB Java driver does support NumberDecimal at this writing.
  
